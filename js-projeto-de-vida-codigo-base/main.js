@@ -15,7 +15,12 @@ for(let j=0;j <botoes.length;j++){
 }
 
 const contadores = document.querySelectorAll (".contador");
-const tempoObjetivo1 = new Date ("")
-const tempoObjetivo2 = new Date ("")
-const tempoObjetivo3 = new Date ("")
-const tempoObjetivo4 = new Date ("")
+let tempoAtual = new Date ();
+const tempoObjetivo1 = new Date ("2025-12-12T00:00:00") - tempoAtual;
+contadores[0].textContent = tempoObjetivo1;
+const tempoObjetivo2 = new Date ("2025-10-30T00:00:00") - tempoAtual;
+contadores[1].textContent = tempoObjetivo2;
+const tempoObjetivo3 = new Date ("2026-03-06T00:00:00") - tempoAtual;
+contadores[2].textContent = tempoObjetivo3;
+const tempoObjetivo4 = new Date ("2026-06-19T00:00:00") - tempoAtual;
+contadores[3].textContent = tempoObjetivo4;
